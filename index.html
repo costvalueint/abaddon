@@ -1,0 +1,84 @@
+<html>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <head>
+    <script src="access.js" async></script>
+    <script src="running.js" async></script>
+    <script src="Console.js" async></script>
+    <meta charset="utf-8" />
+  </head>
+  <body id="body">
+    <div id="header" style="display: none">
+      <select id="languageSelectBox">
+        <option id="KMS" value="">Default:Korean</option>
+      </select>
+    </div>
+    <h1 id="title">메이플스토리M 유니온 배치 계산기</h1>
+    <div id="subtitle">Made by: 루나 서버 Abaddon</div>
+    <br />
+    <div id="legionWrapper" class="centerMiddleChild">
+      <div id="pieceForm">
+        <form></form>
+        <button id="clearPieces">Clear Pieces</button>
+      </div>
+      <div id="legion">
+        <table id="legionBoard">
+          <tbody></tbody>
+        </table>
+        <div id="legionFooter" class="centerMiddleChild">
+          <div id="labels">
+            <div id="currentPieces">
+              캐릭터 산정된 공간: <span id="currentPiecesValue">0</span>
+            </div>
+            <div id="boardFilled">
+              지도 선택 공간: <span id="boardFilledValue">0</span>
+            </div>
+            <button id="clearBoard">지도 초기화</button>
+          </div>
+          <div id="middlelabels">
+            <button id="boardButton">배치 시작</button>
+            <button id="resetButton">배치 초기화</button>
+            <div id="failText"></div>
+          </div>
+          <div id="options">
+            <div id="checkboxes">
+              <input
+                type="checkbox"
+                id="bigClick"
+                style="display: none"
+              /><label for="bigClick" style="display: none"></label>
+              <input
+                type="checkbox"
+                id="liveSolve"
+                style="display: none"
+              /><label for="liveSolve" style="display: none">실시간</label>
+              <div id="darkModeLabel">
+                <input type="checkbox" id="darkMode" /><label for="darkMode"
+                  >다크 모드</label
+                >
+              </div>
+            </div>
+            <div id="iterationTime">
+              <div id="iterations">
+                Iterations: <span id="iterationsValue"></span>
+              </div>
+              <div id="time">Time: <span id="timeValue"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="instructions">
+        <h2>설명:</h2>
+        <div id="paragraph">
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
+          <p>5. 지도 산정 공간이 캐릭터 산정 공간보다 커야합니다.</p>
+          <p>6. 다크 모드를 애용합시다.</p>
+          <p>7. 서버 트래픽 증가에 주의해주세요.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<center>Copyright 2022. int All rights reserved.</center>
